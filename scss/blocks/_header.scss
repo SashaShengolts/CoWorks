@@ -1,0 +1,30 @@
+.header {
+    margin: 40px 0px;
+}
+
+.header__row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: 30px;
+}
+
+.header__log {
+    flex-shrink: 0;
+}
+
+.header__nav {
+    @include mobile () {
+        display: none;
+
+    }
+}
+
+.header__nav-btn {
+    display: none;
+
+    @include mobile () {
+        display: block;
+    }
+
+}

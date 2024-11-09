@@ -1,0 +1,31 @@
+.services {}
+
+.services__title {
+    max-width: 570px;
+    margin-bottom: 40px;
+
+    @include mobile () {
+            margin-bottom: 20px;
+    }
+}
+
+.services_list {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 40px 30px;
+    flex-wrap: wrap;
+
+    @include mobile () {
+            gap: 20px;
+    }
+
+}
+
+.services__list-item {
+    max-width: 270px;
+
+    @include tablet () {
+            min-width: 354px;
+    }
+}
