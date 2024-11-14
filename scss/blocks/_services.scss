@@ -1,4 +1,6 @@
-.services {}
+.services {
+    @include scrollTopMargin;
+}
 
 .services__title {
     max-width: 570px;

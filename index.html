@@ -14,7 +14,7 @@
 
 <body>
 
-    <header class="header">
+    <header class="header" id="top">
         <div class="container container--mobile-fluid">
             <div class="header__row">
                 <a href="" class="logo header__log">
@@ -23,16 +23,16 @@
                 <nav class="nav header__nav">
                     <ul class="nav__list">
                         <li class="nav__item">
-                            <a href="#!" class="nav__link"> Локация </a>
+                            <a href="#locations" class="nav__link"> Локация </a>
                         </li>
                         <li class="nav__item">
-                            <a href="#!" class="nav__link"> Сервис </a>
+                            <a href="#service" class="nav__link"> Сервис </a>
                         </li>
                         <li class="nav__item">
-                            <a href="#!" class="nav__link"> Тарифы </a>
+                            <a href="#price" class="nav__link"> Тарифы </a>
                         </li>
                         <li class="nav__item">
-                            <a href="#!" class="nav__link"> Расположение </a>
+                            <a href="#map" class="nav__link"> Расположение </a>
                         </li>
                         <li class="nav__item visible-desktop">
                             <button class="btn-dark">Оставить заявку</button>
@@ -70,7 +70,7 @@
 
         </section>
 
-        <section class="benefits">
+        <section class="benefits" >
             <div class="container">
                 <div class="benefits__row">
                     <div class="benefits__img">
@@ -125,7 +125,7 @@
             </div>
         </section>
 
-        <section class="locations">
+        <section class="locations" id="locations">
             <div class="container">
                 <div class="locations__row">
                     <div class="locations__title">
@@ -165,7 +165,7 @@
 
         </section>
 
-        <section class="services">
+        <section class="services" id="service">
             <div class="container">
                 <div class="services__title">
                     <h2 class="title-section">Сервисы</h2>
@@ -216,7 +216,7 @@
             </div>
         </section>
 
-        <section class="price">
+        <section class="price" id="price">
             <div class="container">
                 <div class="price__title">
                     <h2 class="title-section">Тарифы</h2>
@@ -296,7 +296,7 @@
             </div>
         </section>
 
-        <section class="cta">
+        <section class="cta" >
             <div class="container">
                 <div class="cta__wrapper">
                     <div class="cta__content">
@@ -319,7 +319,7 @@
             </div>
         </section>
 
-        <section class="map">
+        <section class="map" id="map">
             <div class="container">
                 <div class="map__title">
                     <h2 class="title-section">Расположение</h2>
@@ -422,16 +422,16 @@
                 <div class="footer__nav">
                     <ul class="nav-footer">
                         <li class="nav-footer__item">
-                            <a href="#!" class="nav-footer__link">Локация</a>
+                            <a href="#locations" class="nav-footer__link">Локация</a>
                         </li>
                         <li class="nav-footer__item">
-                            <a href="#!" class="nav-footer__link">Сервис</a>
+                            <a href="#service" class="nav-footer__link">Сервис</a>
                         </li>
                         <li class="nav-footer__item">
-                            <a href="#!" class="nav-footer__link">Тарифы</a>
+                            <a href="#price" class="nav-footer__link">Тарифы</a>
                         </li>
                         <li class="nav-footer__item">
-                            <a href="#!" class="nav-footer__link">Расположение</a>
+                            <a href="#map" class="nav-footer__link">Расположение</a>
                         </li>
                     </ul>
                 </div>
@@ -464,6 +464,10 @@
 
     </footer>
 
+    <a href="#top" class="top-link" id="scrollToTopBt">
+        <img src="./img/icon/arrow-up.svg" alt="top-up">
+    </a>
+<script src="./js/scrollToTop.js"></script>
 </body>
 
 </html>
