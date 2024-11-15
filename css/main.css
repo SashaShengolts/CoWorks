@@ -206,16 +206,18 @@ button:focus {
 @media (max-width: 1220px) {
   .main {
     row-gap: 80px;
+    margin-bottom: 80px;
   }
 }
 @media (max-width: 788px) {
   .main {
     row-gap: 60px;
+    margin-bottom: 60px;
   }
 }
 
 .header {
-  margin: 40px 0px;
+  padding: 40px 0px;
 }
 
 .header__row {
