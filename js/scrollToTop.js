@@ -9,6 +9,6 @@ window.addEventListener('scroll', function () {
     } else {
         scrollButton.classList.remove('top-link--visible')
     }
-    console.log(scrollButton)
+   
 
 })

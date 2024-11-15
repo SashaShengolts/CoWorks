@@ -39,13 +39,36 @@
                         </li>
                     </ul>
                 </nav>
-                <button class="header__nav-btn">
+                <button class="header__nav-btn" id="openMobileNav">
                     <img src="./img/icon/Nav-btn.svg" alt="open nav">
                 </button>
 
             </div>
         </div>
     </header>
+
+    <Section class="mobile-nav">
+        <h2 class="visually-hidden">мобильная навигация</h2>
+        <div class="mobile-nav__header">
+            <a href="" class="mobile-nav__log logo">
+                <img src="./img/logo/CoWorks.svg" alt="logo">
+            </a>
+            <button class="mobile-nav__btn" id="closeMobileNav">
+                <img src="./img/icon/Close.svg" alt="close navigation">
+            </button>
+        </div>
+        <div class="mobile-nav__body">
+            <ul class="mobile-nav-list">
+                <li> <a href="#locations"> Локация </a> </li>
+                <li> <a href="#service"> Сервис </a> </li>
+                <li> <a href="#price"> Тарифы </a> </li>
+                <li> <a href="#map"> Расположение </a> </li>
+                <li> <button class="btn-dark">Оставить заявку</button> </li>
+            </ul>
+
+        </div>
+
+    </Section>
 
 
     <main class="main ">
@@ -70,7 +93,7 @@
 
         </section>
 
-        <section class="benefits" >
+        <section class="benefits">
             <div class="container">
                 <div class="benefits__row">
                     <div class="benefits__img">
@@ -296,7 +319,7 @@
             </div>
         </section>
 
-        <section class="cta" >
+        <section class="cta">
             <div class="container">
                 <div class="cta__wrapper">
                     <div class="cta__content">
@@ -464,10 +487,37 @@
 
     </footer>
 
+    <section class="modal">
+        <div class="modal__body">
+
+            <button class="modal__closer" type="button">
+                <img src="./img/icon/modal-close.svg" alt="close">
+            </button>
+            <div class="modal__header">
+                <h2 class="modal__title">Заказать звонок</h2>
+                <p>Перезвоним в течении 15 минут</p>
+            </div>
+            <form class="modal__inputs">
+                <input type="text" class="input" placeholder="Имя">
+                <input type="text" class="input" placeholder="Телефон">
+                <label for="" class="modal__checkbox-labl">
+                    <input type="checkbox" class="real-checkbox visually-hidden">
+                    <span class="fake-checkbox"></span>
+                    Согласен на обработку персональных данных
+                </label>
+            </form>
+            <button class="btn-modal">Оставить заявку</button>
+
+
+
+        </div>
+    </section>
+
     <a href="#top" class="top-link" id="scrollToTopBt">
         <img src="./img/icon/arrow-up.svg" alt="top-up">
     </a>
-<script src="./js/scrollToTop.js"></script>
+    <script src="./js/scrollToTop.js"></script>
+    <script src="./js/mobile-nav.js"></script>
 </body>
 
 </html>
