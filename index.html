@@ -35,7 +35,7 @@
                             <a href="#map" class="nav__link"> Расположение </a>
                         </li>
                         <li class="nav__item visible-desktop">
-                            <button class="btn-dark">Оставить заявку</button>
+                            <button class="btn-dark" data-action="modald">Оставить заявку</button>
                         </li>
                     </ul>
                 </nav>
@@ -84,7 +84,7 @@
                             </p>
                         </div>
                         <div class="promo__btns">
-                            <button class="btn-green">Оставить заявку</button>
+                            <button class="btn-green" data-action="modald">Оставить заявку</button>
                             <a href="#!" class="btn-outline">Исследовать</a>
                         </div>
                     </div>
@@ -262,7 +262,7 @@
                                 <li class="card__list-item">Без специальной скидки</li>
                             </ul>
                             <div class="card__btn">
-                                <button class="btn-price">Оставиь заявку</button>
+                                <button class="btn-price" data-action="modald">Оставиь заявку</button>
                             </div>
                         </div>
                     </div>
@@ -285,7 +285,7 @@
 
                             <div class="card__btn">
 
-                                <button class="btn-price">Оставиь заявку</button>
+                                <button class="btn-price" data-action="modald">Оставиь заявку</button>
                             </div>
 
                         </div>
@@ -309,7 +309,7 @@
                             </ul>
                             <div class="card__btn">
 
-                                <button class="btn-price">Оставиь заявку</button>
+                                <button class="btn-price" data-action="modald">Оставиь заявку</button>
                             </div>
 
                         </div>
@@ -335,7 +335,7 @@
                             <a href="#!" class="btn-whatsapp">
                                 <img src="./img/icon/Wa.svg" alt="wa">
                                 WhatsApp</a>
-                            <button class="btn-outline">Оставить заявку</button>
+                            <button class="btn-outline" data-action="modald">Оставить заявку</button>
                         </div>
                     </div>
                 </div>
@@ -489,8 +489,7 @@
 
     <section class="modal">
         <div class="modal__body">
-
-            <button class="modal__closer" type="button">
+            <button class="modal__close" type="button" id="closeModal">
                 <img src="./img/icon/modal-close.svg" alt="close">
             </button>
             <div class="modal__header">
@@ -506,10 +505,7 @@
                     Согласен на обработку персональных данных
                 </label>
             </form>
-            <button class="btn-modal">Оставить заявку</button>
-
-
-
+            <button class="btn-dark btn-dark--wide">Оставить заявку</button>
         </div>
     </section>
 
@@ -518,6 +514,7 @@
     </a>
     <script src="./js/scrollToTop.js"></script>
     <script src="./js/mobile-nav.js"></script>
+    <script src="./js/modal.js"></script>
 </body>
 
 </html>

@@ -7,10 +7,16 @@ a.btn-dark {
     font-size: 16px;
     font-weight: 700;
     color: #fff;
+    text-align: center;
+
     transition: background-color 0.2s ease-in;
 
     &:hover {
         background-color: #333;
+    }
+
+    &--wide {
+        width: 100%;
     }
 
 }
@@ -91,17 +97,17 @@ a.btn-tg {
 .btn-whatsapp,
 a.btn-whatsapp {
     display: inline-flex;
-        column-gap: 10px;
-    
-        padding: 10px 20px;
-        border-radius: 80px;
-        background-color: #00AE6C;
-        font-size: 16px;
-        font-weight: 700;
-        color: #fff;
-        transition: background-color 0.2s ease-in;
-    
-        &:hover {
-            background-color: #18573f;
-        }
+    column-gap: 10px;
+
+    padding: 10px 20px;
+    border-radius: 80px;
+    background-color: #00AE6C;
+    font-size: 16px;
+    font-weight: 700;
+    color: #fff;
+    transition: background-color 0.2s ease-in;
+
+    &:hover {
+        background-color: #18573f;
+    }
 }
