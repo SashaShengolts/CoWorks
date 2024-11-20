@@ -32,10 +32,22 @@
 
     }
 
+    &--tablet-fluid {
+        @include tablet () {
+            width: auto;
+        }
+    }
+
     &--mobile-fluid {
         @include mobile () {
             width: auto;
         }
+    }
+
+
+
+    &--mobile-fluid-no-padding {
+        padding-right: 0;
     }
 
 }

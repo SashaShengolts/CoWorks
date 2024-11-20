@@ -16,7 +16,7 @@ mobileNavBtnClose.addEventListener('click', function () {
 })
 
 const mobileNavLinks = mobileNav.querySelectorAll('a, button')
-console.log(mobileNavLinks)
+
 
 mobileNavLinks.forEach(function (item) {
 

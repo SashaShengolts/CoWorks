@@ -205,10 +205,18 @@ button:focus {
     width: 100%;
   }
 }
+@media (max-width: 1220px) {
+  .container--tablet-fluid {
+    width: auto;
+  }
+}
 @media (max-width: 788px) {
   .container--mobile-fluid {
     width: auto;
   }
+}
+.container--mobile-fluid-no-padding {
+  padding-right: 0;
 }
 
 .main {
@@ -493,6 +501,20 @@ a.btn-whatsapp:hover {
   justify-content: center;
 }
 
+.benefits {
+  scroll-margin-top: 60px;
+}
+@media (max-width: 1220px) {
+  .benefits {
+    scroll-margin-top: 40px;
+  }
+}
+@media (max-width: 788px) {
+  .benefits {
+    scroll-margin-top: 30px;
+  }
+}
+
 .benefits__row {
   display: flex;
   column-gap: 30px;
@@ -662,19 +684,21 @@ a.btn-whatsapp:hover {
   }
 }
 
-.slider {
-  overflow: hidden;
-  display: flex;
-  column-gap: 10px;
-}
-
-.slider__img {
+.slider img {
   border-radius: 8px;
+  object-fit: cover;
+  max-width: unset !important;
+  height: unset !important;
+  height: 400px !important;
 }
 @media (max-width: 788px) {
-  .slider__img {
-    height: 250px;
+  .slider {
+    height: 250px !important;
   }
+}
+
+.slider > *:first-child {
+  padding-left: 15px;
 }
 
 .services {
@@ -992,11 +1016,11 @@ a.btn-whatsapp:hover {
   }
 }
 
-.map__img {
+.map__img, .map__iframe {
   border-radius: 40px;
 }
 @media (max-width: 1220px) {
-  .map__img {
+  .map__img, .map__iframe {
     border-radius: 20px;
   }
 }
@@ -1064,6 +1088,19 @@ a.btn-whatsapp:hover {
   column-gap: 30px;
   align-items: center;
 }
+.topic__btn:hover:not(:focus-visible) {
+  opacity: 0.5;
+}
+.topic__btn:active:not(:focus-visible) .topic__title {
+  color: #00ae6c;
+}
+.topic__btn:focus {
+  outline: none;
+}
+.topic__btn:focus-visible {
+  outline-offset: 1px;
+  outline: #005fcc auto 1px;
+}
 
 @media (max-width: 788px) {
   .topic__icon {
@@ -1084,13 +1121,11 @@ a.btn-whatsapp:hover {
 }
 
 .topic__content {
-  padding-top: 30px;
-  display: flex;
-  flex-direction: column;
-  row-gap: 1em;
   line-height: 1.5;
   color: #000;
-  display: none;
+  max-height: 0;
+  overflow: hidden;
+  transition: all 0.2s ease-in;
 }
 @media (max-width: 788px) {
   .topic__content {
@@ -1099,10 +1134,18 @@ a.btn-whatsapp:hover {
   }
 }
 
-.topic__content--open {
-  display: flex;
+.topic__content-padding {
+  padding-top: 30px;
+}
+.topic__content-padding p + p {
+  margin-top: 1em;
 }
 
+/*
+.topic--open .topic__content {
+    display: flex;
+}
+    */
 .footer {
   padding: 60px 0;
   background-color: #000;
