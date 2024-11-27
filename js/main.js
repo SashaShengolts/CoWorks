@@ -6,7 +6,7 @@ const slider = tns({
     speed: 400,
     //loop: false,  
     
-    autoWidht: true,
+    autoWidth: true,
     lazyload: true,   
     swipeAngle: false,   
     
